@@ -1,0 +1,484 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* admin men */
+.menu {
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.menu .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.menu a:hover {
+    background: #e63946;
+    color: white;
+}
+
+.menu li:last-child a {
+    background: #dc3545;
+    color: white;
+}
+
+.menu li:last-child a:hover {
+    background: #c82333;
+}
+
+/* main content*/
+.Main-content,
+.main-content {
+    flex: 1;
+    padding: 20px 15px;
+}
+
+.Main-content .wrapper,
+.main-content .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/*  h1 */
+h1 {
+    color: #264653;
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e63946;
+}
+
+/* dashboard */
+.col-4 {
+    width: calc(25% - 10px);
+    float: left;
+    margin: 0 5px 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #e9ecef;
+    transition: transform 0.3s ease;
+}
+.col-4:hover{
+    transform: scale(1.05);
+}
+
+.col-4 h1 {
+    color: #e63946;
+    font-size: 28px;
+    margin: 5px 0;
+    border: none;
+}
+
+.col-4 br {
+    display: none;
+}
+
+/* Les tableaux */
+.table-full {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background: white;
+    font-size: 13px;
+}
+
+.table-full th {
+    background: #f8f9fa;
+    color: #333;
+    padding: 10px 8px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #e63946;
+    font-size: 13px;
+}
+
+.table-full td {
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+}
+
+.table-full tr:hover {
+    background: #f8f9fa;
+}
+
+/* نفيكسيو الفورمز لي فالطابلو */
+.tbl-30 {
+    width: 100%;
+    max-width: 400px;
+    border-collapse: collapse;
+}
+
+.tbl-30 td {
+    padding: 8px 0;
+    vertical-align: middle;
+}
+
+.tbl-30 tr:first-child td {
+    padding-top: 0;
+}
+
+.tbl-30 tr:last-child td {
+    padding-bottom: 0;
+}
+
+/* linput li fel forms */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #e63946;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+    line-height: 1.4;
+}
+
+/* les buttons فالطابلو */
+.table-full .btn-blue,
+.table-full .btn-secondary,
+.table-full .btn-delete {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 2px;
+    min-width: 80px;
+    text-align: center;
+}
+
+
+a.btn-blue {
+    padding: 8px 15px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* les buttons*/
+.btn-primary,
+.btn-blue,
+.btn-secondary,
+.btn-delete {
+    display: inline-block;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: #e63946;
+    color: white;
+}
+
+
+.btn-primary:hover {
+    background: #c1121f;
+}
+
+.btn-blue {
+    background: blue;
+    color: white;
+}
+
+
+.btn-blue:hover {
+    background: rgb(1, 1, 191);
+}
+
+.btn-secondary {
+    background: #2a9d8f;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #21867a;
+}
+
+.btn-delete {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #c82333;
+}
+
+/* لي فوطو فالطابلو */
+.table-full img {
+    max-width: 60px;
+    max-height: 50px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    padding: 2px;
+    background: white;
+}
+
+/*  Les messages */
+.error,
+.succes {
+    padding: 8px 12px;
+    margin: 10px 0;
+    border-radius: 3px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 13px;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.succes {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/*  login page */
+.login {
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.login h1 {
+    font-size: 20px;
+    margin-bottom: auto;
+    text-align: center;
+    border: none;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    font-size: 14px;
+}
+
+.login .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/*   l footer  */
+.Footer {
+    background: #264653;
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.Footer .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.Footer a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.Footer a:hover {
+    text-decoration: underline;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* les tableaux */
+.table-full label {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* نرجعو الديزاين ريسبونسيف */
+@media (max-width: 992px) {
+    .col-4 {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .col-4 {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+    
+    .menu a {
+        width: 180px;
+    }
+    
+    .table-full {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .Main-content .wrapper,
+    .main-content .wrapper {
+        padding: 15px;
+    }
+    
+    /*  نرجعو لي بوثون فالثيليفون في صف واحد*/
+    .table-full td:last-child {
+        white-space: normal;
+    }
+    
+    .table-full .btn-primary,
+    .table-full .btn-secondary,
+    .table-full .btn-delete {
+        display: block;
+        width: 100%;
+        margin: 3px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    .menu a {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .login {
+        margin: 30px auto;
+        padding: 20px;
+    }
+    
+    .table-full th,
+    .table-full td {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    .table-full td:last-child {
+        min-width: 120px;
+    }
+}
+
+
+/* منع التداخلات بين العناصر */
+table {
+    border-spacing: 0;
+}
+
+
+.table-full td:first-child,
+.table-full th:first-child {
+    padding-left: 10px;
+}
+
+.tbl-30 input,
+.tbl-30 select,
+.tbl-30 textarea {
+    margin-bottom: 0;
+}
+
+input[type="radio"] {
+    margin: 0 5px 0 10px;
+    transform: scale(0.9);
+}
+
+
+.tbl-30 img {
+    max-width: 100px;
+    margin-top: 5px;
+}
+
+input[type="search"] {
+    box-sizing: border-box;
+}
